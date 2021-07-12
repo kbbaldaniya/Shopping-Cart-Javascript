@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopping_cart</title>
+    <link rel="stylesheet" href="cart-style.css" />
+    <script src="cart.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <span>Shopping cart</span>
+      <hr />
+      <div id="item1">
+        <div class="item">
+          <div class="remove">
+            <input type="button" value="remove" onclick="item('item1','box1','ans1')" />
+          </div>
+          <div>
+            <img id="heart1" src="./Images/heart.png" width="35" onclick="wishlist('heart1')" />
+          </div>
+          <div class="image">
+            <img src="./Images/t-shirt.jpg" alt="" width="100" />
+          </div>
+          <div class="product">
+            <span>T-shirt for man</span>
+          </div>
+          <div>$<input type="text" id="p1" value="199" disabled /></div>
+          <div class="box">
+            <input type="button" value="+" onclick="plus('box1','ans1','p1')"/>
+            <input type="text" id="box1" value="1" disabled />
+            <input type="button" value="-" onclick="minus('box1','ans1','p1')" />
+          </div>
+          <div>
+             <input type="ans" name="vbox" value="199" id="ans1" disabled />
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div id="item2">
+        <div class="item">
+          <div class="remove">
+            <input type="button" value="remove" onclick="item('item2','box2','ans2')" />
+          </div>
+          <div>
+            <img id="heart2"src="./Images/heart.png" width="35" onclick="wishlist('heart2')" />
+          </div>
+          <div class="image">
+            <img src="./Images/goggles.jpeg" alt="" width="135" />
+          </div>
+          <div class="product">
+            <span>Sun glasses</span>
+          </div>
+          <div>$<input type="text" id="p2" value="699" disabled /></div>
+          <div class="box">
+            <input type="button" value="+" onclick="plus('box2','ans2','p2')" />
+            <input type="text" id="box2" value="1" disabled />
+            <input type="button" value="-" onclick="minus('box2','ans2','p2')" />
+          </div>
+          <div>
+            <input type="ans" name="vbox" value="699" id="ans2" disabled />
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div id="item3">
+        <div class="item">
+          <div class="remove">
+            <input type="button" value="remove" onclick="item('item3','box3','ans3')" />
+          </div>
+          <div>
+            <img id="heart3" src="./Images/heart.png" width="35" onclick="wishlist('heart3')" />
+          </div>
+          <div class="image">
+            <img src="./Images/shoes.jpg" alt="" width="90" />
+          </div>
+          <div class="product">
+            <span>Man canvas shoes</span>
+          </div>
+          <div>$<input type="text" id="p3" value="499" disabled /></div>
+          <div class="box">
+            <input type="button" value="+" onclick="plus('box3','ans3','p3')" />
+            <input type="text" id="box3" value="1" disabled />
+            <input type="button" value="-" onclick="minus('box3','ans3','p3')" />
+          </div>
+          <div>
+            <input type="ans" name="vbox" value="499" id="ans3" disabled />
+          </div>
+        </div>
+        <hr />
+      </div>
+      <div class="total">
+        <div>
+          <input type="button" id="add" value="Total" />
+        </div>
+        <div id="display">
+          <span>items:</span>
+          <input type="text" id="total" value="3" name="total" disabled />
+          <span>price:</span>
+          <input type="text" id="price" value="1397" name="price" disabled />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Home cart</title>
+    <link rel="stylesheet" href="homecart.css" />
+    <script src="homecart.js"></script>
+  </head>
+
+  <body id="body">
+    <ul class="nav">
+      <li><a href="#home">Home</a></li>
+      <li>
+        <div class="icon">
+          <button onclick="openForm()">
+            <img class="right" src="./Images/carticon.png" width="35" />
+          </button>
+          <input class="count" value="0" type="text" id="count" disabled />
+        </div>
+      </li>
+    </ul>
+
+    <div>
+      <div id="card" style="margin-bottom: 100px"></div>
+    </div>
+
+    <footer class="footer">
+      <p>footer not available</p>
+    </footer>
+    <div>
+      <div class="container2" id="container2">
+        <span>Shopping cart</span>
+        <button type="button" class="cancel" onclick="closeForm()">
+          Close
+        </button>
+        <hr />
+        <div>
+          <div id="item" style="margin: 10px; padding: 10px"></div>
+          <div id="total" style="margin: 10px; padding: 10px"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
